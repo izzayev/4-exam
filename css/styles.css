@@ -1,0 +1,406 @@
+/* rubik-regular - latin */
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    src: 
+    url('../fonts/rubik-v21-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/rubik-v21-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* rubik-500 - latin */
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    src: 
+    url('../fonts/rubik-v21-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/rubik-v21-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* noto-sans-regular - latin */
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: 
+    url('../fonts/noto-sans-v27-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/noto-sans-v27-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* noto-sans-500 - latin */
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: 
+    url('../fonts/noto-sans-v27-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/noto-sans-v27-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* noto-sans-600 - latin */
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: 
+    url('../fonts/noto-sans-v27-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/noto-sans-v27-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+* 
+*::after
+*::before{
+    box-sizing: border-box;
+}
+
+img {
+    vertical-align: middle;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow', 'Fraunces', serif;
+} 
+
+.visually__hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
+
+ul,
+li,
+ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+/* header */
+header {
+    border-bottom: 2px solid #E3E6EB;
+    padding-bottom: 11px;
+}
+.container {
+    max-width: 1340px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header__container {
+    margin-top: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo1 {
+    display: block;
+    width: 226px;
+    height: 44px;
+    object-fit: contain;
+    margin-right: 56px;
+}
+
+.logo2 {
+    display: none;
+    width: 226px;
+    height: 44px;
+    object-fit: contain;
+    margin-right: 56px;
+}
+
+.header__form input {
+    width: 670px;
+    background-color: #F8FAFD;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    height: 48px;
+    padding-left: 45px;
+    padding-right: 15px;
+    font-family: 'Rubik';
+    font-size: 13px;
+    line-height: 15px;
+    color: rgba(0, 0, 0, 0.24);
+    background-image: url("./../images/lupa.svg");
+    background-repeat: no-repeat;
+    background-position: 17px 12px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    border: none;
+}
+
+.header__form label {
+    position: relative;
+}
+
+.dark_mode{
+    width: 23px;
+    height: 23px;
+    object-fit: contain;
+}
+
+.dark__mode {
+    background-color: rgb(74, 72, 87);
+    color: #ffffff;
+}
+
+.btn_dark {
+    background-image: url('./../images/sun.svg');
+    width: 23px;
+    height: 23px;
+}
+/* result */
+.result {
+    border-bottom: 2px solid #E3E6EB;
+    padding-bottom: 11px;
+}
+
+.result__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 306px;
+    padding-top: 12px;
+}
+
+.result__heading{
+    font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #222531;
+}
+
+.result__btn {
+    width: 195px;
+    height: 34px;
+    padding-left: 42px;
+    font-family: 'Rubik';
+    font-weight: 500;
+    line-height: 17px;
+    color: #FFFFFF;
+    background-image: url('./../images/calendar1.svg');
+    background-repeat: no-repeat;
+    background-position: 9px 4.5px;
+}
+
+.cards__container {
+    padding-top: 25px;
+    display: flex;
+    
+}
+
+.cards__left {
+    padding-top: 25px;
+    padding-right: 25px;
+    min-width: 295px;
+    overflow-x: scroll;
+    overflow-x: hidden;
+    max-height: 400px;
+    padding-top: 25px;
+    gap: 15px;
+}
+
+.cards__heading {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.cards__text {
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 155.6%;
+    width: 218px;
+    margin-top: 5px;
+}
+
+.cards__item {
+    background: #F8FAFD;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    min-width: 180px;
+    padding: 15px 10px;
+    margin-bottom: 15px;
+}
+
+.cards__texts {
+    margin-right: 40px;
+}
+
+.wrapper__heading{
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.wrapper__text {
+    font-family: 'Noto Sans';
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    margin-top: 5px;
+}
+
+.book__cards {
+    background-color: #F8FAFD;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 33px;
+}
+
+.book__card {
+    max-width: 282px;
+    padding: 13px 16px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 33px;
+}
+
+.book__img__wrpper {
+    background-color: #F8FAFD;
+    border-radius: 5px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-right: 28px;
+    padding-left: 20px;
+}
+
+.book__img {
+    width: 201px;
+    height: 202px;
+    border-radius: 5px;
+    object-fit: contain;
+}
+
+.book__body {
+    margin-top: 19px;
+    margin-bottom: 10px;
+}
+
+.book__heading {
+    font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.book__text {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: #757881;
+}
+
+.book__year {
+    font-family: 'Noto Sans';
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: #757881;
+}
+
+.book__btns {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.btn__top1 {
+    width: 120px;
+}
+.btn__top2 {
+    width: 120px;
+}
+
+.btn-outline-primary {
+    background: rgba(13, 117, 255, 0.05);
+    border: none;
+}
+
+.book__btn__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+
+
+
+/* dark mode */
+.dark__mode .logo2 {
+    display: block;
+}
+
+.dark__mode .logo1 {
+    display: none;
+}
+.dark__mode li {
+    background-color: #443a55;
+}
+
+.dark__mode ul {
+    background-color: #5c5170;
+}
+
+.dark__mode p, h2, a {
+   color: #FFFFFF;
+}
+
+.dark__mode .result__heading {
+   color: #FFFFFF;
+}
+
+.dark__mode .cards__heading {
+   color: #FFFFFF;
+}
+
+.dark__mode .book__img__wrpper {
+   background-color: #333770;
+}
+
+.dark__mode .btn__top2 {
+   background-color: #525eff;
+   color: #ffffff;
+}
+
+.dark__mode .header__form input {
+    background: rgb(183, 188, 199);
+    color: #FFFFFF;
+}
+
+.dark__mode .btn_dark {
+    background-image: url('./../images/636waxingcrescentmoon_100801.svg');
+    background-repeat: no-repeat;
+    block-size: 25px;
+}
